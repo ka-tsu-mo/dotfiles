@@ -3,6 +3,9 @@
 # 256 color emulater
 export TERM="xterm-256color"
 
+# nvim config file directory
+export XDG_CONFIG_HOME=$HOME/dotfiles
+
 # java
 alias javac='javac -J-Dfile.encoding=utf-8'
 alias java='java -Dfile.encoding=utf-8'

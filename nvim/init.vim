@@ -1,5 +1,3 @@
-
-
 " dein
 if &compatible
   set nocompatible

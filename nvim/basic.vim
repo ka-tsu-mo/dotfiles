@@ -9,11 +9,13 @@ highlight! Normal ctermbg=NONE guibg=NONE
 highlight! NonText ctermbg=NONE guibg=NONE
 highlight! LineNr ctermbg=NONE guibg=NONE
 set number
+set title
+set ambiwidth=double
 set laststatus=2
-set list listchars=tab:\▸\-
+set list
+set listchars=tab:▸-,trail:-
 
 " Tab/Indent
-set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2

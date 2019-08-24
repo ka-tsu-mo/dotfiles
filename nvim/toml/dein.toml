@@ -2,6 +2,9 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
   let g:airline_powerline_fonts = 1

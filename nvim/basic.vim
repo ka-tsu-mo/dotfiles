@@ -4,6 +4,10 @@ set autoread
 set hidden
 
 " Appearance
+colorscheme molokai
+highlight! Normal ctermbg=NONE guibg=NONE
+highlight! NonText ctermbg=NONE guibg=NONE
+highlight! LineNr ctermbg=NONE guibg=NONE
 set number
 set laststatus=2
 set list listchars=tab:\▸\-

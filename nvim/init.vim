@@ -24,3 +24,4 @@ if dein#check_install()
 endif
 
 runtime! basic.vim
+runtime! keymapping.vim

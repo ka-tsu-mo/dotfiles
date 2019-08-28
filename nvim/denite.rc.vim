@@ -16,3 +16,12 @@ let s:menus.zsh.file_candidates = [
     \ ['zpreztorc', '~/dotfiles/zsh/.zpreztorc']
     \ ]
 call denite#custom#var('menu', 'menus', s:menus)
+
+if executable('rg')
+  call denite#custom#var('file/rec', 'command', ['rg', '--files'])
+  call denite#custom#var('grep', 'command', ['rg'])
+  call denite#custom#var('grep', 'recursive_opts', [])
+  call denite#custom#var('grep', 'final_opts', [])
+  call denite#custom#var('grep', 'separator', ['--'])
+  call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep', '--no-heading'])
+endif

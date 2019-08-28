@@ -2,6 +2,15 @@
 repo = 'Shougo/denite.nvim'
 on_cmd = 'Denite'
 hook_source = 'source ~/dotfiles/nvim/denite.rc.vim'
+hook_add = '''
+  nnoremap [denite] <Nop>
+  nmap     ;d [denite]
+  nnoremap <silent> [denite]fr :<C-u>DeniteBufferDir file/rec<CR>
+  nnoremap <silent> [denite]fo :<C-u>Denite file/old<CR>
+  nnoremap <silent> [denite]f  :<C-u>Denite file<CR>
+  nnoremap <silent> [denite]m  :<C-u>Denite menu<CR>
+  nnoremap <silent> [denite]b  :<C-u>Denite buffer<CR>
+'''
 
 [plugins.ftplugin]
 denite = '''

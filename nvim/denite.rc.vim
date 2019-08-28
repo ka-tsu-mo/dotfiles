@@ -25,3 +25,9 @@ if executable('rg')
   call denite#custom#var('grep', 'separator', ['--'])
   call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep', '--no-heading'])
 endif
+
+call denite#custom#option('_', 'statusline', v:false)
+call denite#custom#option('default', {
+      \ 'highlight_filter_background': 'CursorLine',
+      \ 'split': 'floating',
+      \ })

@@ -1,3 +1,5 @@
+language C
+
 " File
 set noswapfile
 set autoread

@@ -20,5 +20,7 @@ nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
 
+nnoremap <silent><ESC><ESC> :<C-u>noh<CR>
+
 " Release keymappings for plugin
 nnoremap ; <Nop>

@@ -128,3 +128,6 @@ nnoremap <silent><buffer><expr> <Tab> winnr('$') != 1 ?
 
 [[plugins]]
 repo = 'kristijanhusak/defx-icons'
+
+[[plugins]]
+repo = 'cohama/lexima.vim'

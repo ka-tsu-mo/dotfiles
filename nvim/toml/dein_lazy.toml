@@ -131,9 +131,12 @@ repo = 'kristijanhusak/defx-icons'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
+on_event = 'InsertEnter'
 
 [[plugins]]
 repo = "airblade/vim-gitgutter"
+on_cmd = ['Gstatus']
 
 [[plugins]]
 repo = "tpope/vim-fugitive"
+on_cmd = ['Gstatus']

@@ -10,6 +10,7 @@ set autoread
 set hidden
 
 " Appearance
+syntax enable
 colorscheme molokai
 highlight! Normal ctermbg=NONE guibg=NONE
 highlight! NonText ctermbg=NONE guibg=NONE
@@ -27,6 +28,9 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set smartindent
+filetype plugin indent on
+
+autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Search
 set ignorecase

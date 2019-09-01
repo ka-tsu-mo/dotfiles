@@ -9,3 +9,6 @@ defaults write com.apple.dock tilesize -int 35
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
+defaults write com.apple.dock persistent-apps -array
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.dock largesize -float 80

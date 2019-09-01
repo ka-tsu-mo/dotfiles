@@ -82,14 +82,13 @@ setup_zsh() {
     git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
     sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
     chsh -s /usr/local/bin/zsh
-    source ~/.zshenv
 }
 
 setup_nvim() {
     gem install neovim
     pip2 install neovim
     pip3 install neovim
-    npm install neovim
+    npm -g install neovim
     curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
     sh ~/installer.sh ~/.cache/dein
     rm ~/installer.sh
@@ -114,8 +113,12 @@ initialize() {
     setup_zsh
     cd "$DOTFILES_PATH"
     brew bundle
-    install_quiver_free_trial
+    rbenv install 2.6.4
+    rbenv global 2.6.4
+    source ~/.zshenv
+    source "$DOTFILES_PATH/zsh/.zshrc"
     setup_nvim
+    install_quiver_free_trial
 }
 
 main() {

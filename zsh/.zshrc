@@ -19,7 +19,7 @@ $ brew doctor
 BREW_WARNING
 alias brew='PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 
-if which rbenv > /dev/null; then 
+if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
 
@@ -34,4 +34,4 @@ alias lt='lsd --tree'
 
 # theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-[[ -f ~/.p10k.zsh ]] && source $ZDOTDIR/.p10k.zsh
+source $ZDOTDIR/.p10k.zsh

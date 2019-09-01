@@ -80,7 +80,7 @@ setup_zsh() {
     fi
     git clone --recursive https://github.com/sorin-ionescu/prezto.git "$DOTFILES_PATH/zsh/.zprezto"
     git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-    echo /usr/local/bin/zsh >> /etc/shells
+    sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
     chsh -s /usr/local/bin/zsh
     source ~/.zshenv
 }
@@ -111,7 +111,6 @@ initialize() {
         setup_homebrew
     fi
     brew install git
-    git config --global credential.helper osxkeychain
     setup_zsh
     cd "$DOTFILES_PATH"
     brew bundle

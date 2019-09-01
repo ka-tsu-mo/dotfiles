@@ -111,6 +111,7 @@ initialize() {
         setup_homebrew
     fi
     brew install git
+    git config --global credential.helper osxkeychain
     setup_zsh
     cd "$DOTFILES_PATH"
     brew bundle

@@ -78,7 +78,8 @@ setup_zsh() {
         echo "failed to install zsh"
         exit 1
     fi
-    git clone --recursive https://github.com/sorin-ionescu/prezto.git "$DOTFILES_PATH/.zprezto"
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "$DOTFILES_PATH/zsh/.zprezto"
+    git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
     echo /usr/local/bin/zsh >> /etc/shells
     chsh -s /usr/local/bin/zsh
     source ~/.zshenv
@@ -95,12 +96,12 @@ setup_nvim() {
 }
 
 install_quiver_free_trial() {
-    cd /Application
+    cd /Applications
     curl -OL http://happenapps.com/downloads/QuiverFreeTrial.zip
     unzip QuiverFreeTrial.zip
     rmdir __MACOSX
     rm QuiverFreeTrial.zip
-    cd "$DOTFILES_PATH"
+    cd
 }
 
 initialize() {

@@ -90,6 +90,15 @@ setup_nvim() {
     rm ~/installer.sh
 }
 
+install_quiver_free_trial() {
+    cd /Application
+    curl -OL http://happenapps.com/downloads/QuiverFreeTrial.zip
+    unzip QuiverFreeTrial.zip
+    rmdir __MACOSX
+    rm QuiverFreeTrial.zip
+    cd "$DOTFILES_PATH"
+}
+
 initialize() {
     if exists "brew"; then
         echo "Homebrew is already installed"
@@ -100,6 +109,7 @@ initialize() {
     setup_zsh
     cd "$DOTFILES_PATH"
     brew bundle
+    install_quiver_free_trial
     setup_nvim
 }
 

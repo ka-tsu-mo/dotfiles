@@ -46,7 +46,11 @@ deploy() {
 }
 
 setup_homebrew() {
-    xcode-select --install
+    if exists xcode-select; then
+        echo "xcode-select is already exists"
+    else
+        xcode-select --install
+    fi
     if [ "$?" = 1 ]; then
         echo "failed to install command line tool"
         exit 1

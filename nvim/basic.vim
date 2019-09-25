@@ -8,6 +8,7 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 set noswapfile
 set autoread
 set hidden
+autocmd BufWritePre * :%s/\s\+$//ge
 
 " Appearance
 syntax enable
@@ -20,6 +21,7 @@ set ambiwidth=double
 set laststatus=2
 set list
 set listchars=tab:▸-,trail:-
+set scrolloff=3
 
 " Tab/Indent
 set expandtab

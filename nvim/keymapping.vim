@@ -19,6 +19,7 @@ nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
+nnoremap sr <C-w>r
 
 nnoremap <silent><ESC><ESC> :<C-u>noh<CR>
 

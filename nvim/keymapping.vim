@@ -1,5 +1,4 @@
 inoremap jj <ESC>
-vnoremap jk <ESC>
 
 " curosr movement
 nnoremap j gj

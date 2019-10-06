@@ -134,13 +134,17 @@ repo = 'cohama/lexima.vim'
 on_event = 'InsertEnter'
 
 [[plugins]]
-repo = "airblade/vim-gitgutter"
+repo = 'airblade/vim-gitgutter'
 on_cmd = ['Gstatus']
 
 [[plugins]]
-repo = "tpope/vim-fugitive"
+repo = 'tpope/vim-fugitive'
 on_cmd = ['Gstatus']
 
 [[plugins]]
-repo = "mattn/emmet-vim"
-on_ft = ['html']
+repo = 'mattn/emmet-vim'
+on_ft = ['html', 'vue']
+
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'

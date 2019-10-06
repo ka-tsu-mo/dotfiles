@@ -8,7 +8,7 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 set noswapfile
 set autoread
 set hidden
-autocmd BufWritePre * :%s/\s\+$//ge
+autocmd! BufWritePre * :%s/\s\+$//ge
 
 " Appearance
 syntax enable
@@ -32,8 +32,11 @@ set autoindent
 set smartindent
 filetype plugin indent on
 
-autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+augroup indent
+  autocmd!
+  autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
+  autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+augroup END
 
 " Search
 set ignorecase
@@ -43,3 +46,9 @@ set hlsearch
 
 " Clipboard
 set clipboard=unnamed
+
+" lsp
+augroup ccls
+  autocmd!
+  autocmd BufEnter *.c,*.cpp call Make4ccls()
+augroup END

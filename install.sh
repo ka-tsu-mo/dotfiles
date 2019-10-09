@@ -43,6 +43,7 @@ download_dotfiles() {
 
 deploy() {
     ln -s "$DOTFILES_PATH/zsh/.zshenv" ~/.zshenv
+    ln -s "$DOTFILES_PATH/.latexmkrc" ~/.latexmkrc
 }
 
 setup_homebrew() {

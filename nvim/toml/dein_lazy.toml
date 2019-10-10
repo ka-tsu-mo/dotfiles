@@ -148,3 +148,13 @@ on_ft = ['html', 'vue']
 [[plugins]]
 repo = 'posva/vim-vue'
 on_ft = 'vue'
+
+[[plugins]]
+repo = 'lervag/vimtex'
+on_ft = ['plaintex', 'tex']
+hook_add = '''
+  let g:vimtex_view_general_viewer = 'displayline'
+  let g:vimtex_view_general_options = '@line @pdf @tex'
+  let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
+  let g:vimtex_compiler_progname = 'nvr'
+'''

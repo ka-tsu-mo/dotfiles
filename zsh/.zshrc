@@ -5,6 +5,7 @@ export TERM="xterm-256color"
 
 # nvim config file directory
 export XDG_CONFIG_HOME=$HOME/dotfiles
+alias texvim='NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim'
 
 # java
 alias javac='javac -J-Dfile.encoding=utf-8'

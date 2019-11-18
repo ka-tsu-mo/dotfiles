@@ -36,6 +36,7 @@ augroup indent
   autocmd!
   autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
   autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+  autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 augroup END
 
 " Search

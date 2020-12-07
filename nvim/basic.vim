@@ -23,19 +23,15 @@ set smartindent
 filetype plugin indent on
 
 augroup indent
-	autocmd!
-	autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
-	autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
-	autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
+  autocmd!
+  autocmd FileType sh setlocal tabstop=4 shiftwidth=4 softtabstop=4
+  autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+  autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 augroup END
 
 " Appearance
 syntax enable
 set termguicolors
-colorscheme molokai
-highlight! Normal ctermbg=NONE guibg=NONE
-highlight! NonText ctermbg=NONE guibg=NONE
-highlight! LineNr ctermbg=NONE guibg=NONE
 set number
 set ambiwidth=double
 set laststatus=2
@@ -54,8 +50,8 @@ set clipboard=unnamed
 
 " lsp
 augroup ccls
-	autocmd!
-	autocmd BufEnter *.c,*.cpp call Make4ccls()
+  autocmd!
+  autocmd BufEnter *.c,*.cpp call Make4ccls()
 augroup END
 
 " command

@@ -39,12 +39,8 @@ require("packer").startup(function()
 		"EdenEast/nightfox.nvim",
 		run = ":NightfoxCompile",
 		config = function()
-			-- require("nightfox").init({ transparent = true })
-			local override = require("nightfox").override
-			override.palettes({
-				nightfox = {
-					bg1 = NONE,
-				},
+			require("nightfox").setup({
+				options = { transparent = true, }
 			})
 		end,
 	})
